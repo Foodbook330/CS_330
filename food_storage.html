@@ -1,0 +1,75 @@
+<html>
+<header>
+  <title>Food Storage</title>
+  <link rel = "stylesheet" type = "text/css" href = "foodbook.css"/>
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Nanum+Gothic&display=swap" rel="stylesheet">
+</header>
+<body>
+  <div class = "nav-bar">
+    <div id = "nav-button">
+      <a href = "foodbook_home.html">HOME</a>
+    </div>
+    <div id = "nav-button">
+      <a href = "my_pantry.html">MY PANTRY</a>
+    </div>
+    <div id = "nav-button">
+      COOKING TIPS
+    </div>
+  </div>
+  <div id = "foodbook-header">
+    Food Storage
+  </div>
+  <div class = "food-storage-box">
+    <div id = "food-storage-section-title">
+      Meat
+    </div>
+    <div id = "foodbook-paragraph">
+      Store raw meat (including poultry and seafood) on the bottom shelf of the refrigerator. This helps ensure that the juices do not drip onto the other foods and contaminate them. Most raw meat can be stored in the refrigerator for 3-5 days. Groud meat, however, should only be kept for 1-2 days. Raw roasts, steaks, and chops can be kept in the freezer for up to a year. Uncooked, frozen ground meat can be kept for 4 months, and frozen cooked meat can be kept for 3 months.
+    </div>
+    <div id = "food-storage-section-title">
+      Vegetables
+    </div>
+    <div id = "foodbook-paragraph">
+      Leafy greens stay fresh the longest when rinsed and stored in a sealed container in the refirgerator. Before placing them in a container, wrap them in paper towel for best results. These vegetables stay good for around 4-6 days. Root vegetables should be stored in a cool, dark, dry spot not in the refrigerator. A good place to store these vegetables and others (such as onions, garlic, potatoes, yams, and pumpkins) would be in your pantry or in a dark cupboard.
+    </div>
+    <div id = "food-storage-section-title">
+      Fruits
+    </div>
+    <div id = "foodbook-paragraph">
+      Fresh fruits should be used within a few days of buying. If the fruit needs to be ripened, leave them out at room temperature, the store in the refrigerator. Frozen fruit should be stored in the freezer. Most frozen fruits can last for up to 6 months. Canned fruits can be stored at room temperature and many have a shelf life of up to 2 years. Dried fruit should be stored in a cool, dark place (warm temperatures make these foods spoil faster). Dried fruit normally lasts between 4 months and 1 year.
+    </div>
+    <div id = "food-storage-section-title">
+      Grains
+    </div>
+    <div id = "foodbook-paragraph">
+      The shelf life of whole intact grains, like wheat berries or brown rice, if stored properly in airtight containers, is up to 6 months in a cool, dry pantry shelf or up to a year in the freezer. If stored properly in airtight containers, most whole grain flours and meals will keep for 1 to 3 months in a cool dry pantry shelf or 2 to 6 months in the freezer.
+    </div>
+    <div id = "food-storage-section-title">
+      Dairy
+    </div>
+    <div id = "foodbook-paragraph">
+      Cheese are normally be kept in the refrigerator for 1 week if the cheese has been opened and 2 weeks if the cheese is unopened. Cheeses should never be frozen. Butter, cream cheese, and other dairy spreads can be kept in the refrigerator for 2-3 months, and, like cheeses, should not be frozen. Milk such as buttermilk, milk, half-and-half can be kept in the refrigerator for 4-7 days. Milk can be frozen, but buttermilk, cream, and half-and-half should not be frozen. Eggs can be kept for up to 5 weeks. Whole eggs should not be frozen, but eggs whites can be kept in the freezer for up to 6 months.
+    </div>
+    <div class = "buffer-box">
+    </div>
+    <div id = "note">
+      Please note that the information listed on this page is generalized and is not applicable in all situations. Expiration dates and food storage information issued by the producers should take precedence. Consumption of expired foods may increase your risk of foodborne illnesses.
+    </div>
+  </div>
+  <div class = "buffer-box">
+  </div>
+  <div id="respond">
+  <h3>Leave a Comment</h3>
+  <form action="post_comment.php" method="post" id="commentform">
+    <label for="comment_author" class="required">Your name</label>
+    <input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
+    <label for="subject" class="required">Subject</label>
+    <input type="subject" name="subject" id="subject" value="" tabindex="2" required="required">
+    <label for="comment" class="required">Your message</label>
+    <textarea name="comment" id="comment" rows="10" tabindex="4"  required="required"></textarea>
+    <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID" />
+    <button onclick="window.location.href = 'comment.html';">Submit comment</button>
+  </form>
+</div>
+</body>
+</html>
