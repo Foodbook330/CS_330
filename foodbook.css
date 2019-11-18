@@ -34,11 +34,9 @@ body {
   width: 64%;
   height: 100%;
   float: left;
-  border-width: thin;
-  border-style: solid;
   border-color: black;
   margin: 15px;
-  margin-left: 0px;
+  margin-left: 25px;px;
   margin-right: 0px;
 }
 
@@ -52,8 +50,6 @@ body {
   width: 31%;
   height: 100%;
   float: right;
-  border-width: thin;
-  border-style: solid;
   border-color: black;
   margin: 15px;
   margin-right: 0px;
@@ -109,6 +105,18 @@ body {
   text-shadow: 3px 3px black;
 }
 
+.button-style2{
+  width: 90%;
+  height: 65px;
+  margin-left: 5%;
+  margin-top: 23px;
+  margin-bottom: 10px;
+  background-color: #9fb8ad;
+  color: white;
+  font-size: 44px;
+  text-align: center;
+}
+
 a {
   color: white;
   text-decoration: none;
@@ -148,6 +156,15 @@ a {
   margin-top: 50px;
 }
 
+#pantry-section-title{
+  font-size: 60px;
+  text-align: center;
+  font-family: 'Lobster', cursive;
+  color: white;
+  text-shadow: 3px 3px black;
+  margin: 10px;
+}
+
 .food-storage-box{
   background-color: #9fb8ad;
   margin-left: 15px;
@@ -160,6 +177,15 @@ a {
   margin-right: 15px;
   height: 60px;
   margin-top: 0px;
+}
+
+.buffer-box2{
+  background-color: #9fb8ad;
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 60px;
+  margin: 0;
+  width: 100%;
 }
 
 #subtitle{
@@ -204,4 +230,56 @@ a {
   border-style: solid;
   border-color: black;
   border-width: thin;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto auto auto auto;
+  background-color: #9fb8ad;
+  padding: 10px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  margin: 10px;
+  width: 45%;
+}
+
+.grid-item-expiration {
+  background-color: #31979F;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  margin: 10px;
+  width: 45%;
+}
+
+.grid-no-item {
+  background-color: #9fb8ad;
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  margin: 10px;
+  width: 45%;
+}
+
+.grid-item-expiration .date-text{
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+}
+
+.grid-item-expiration:hover .date-text{
+	visibility: visible;
 }
