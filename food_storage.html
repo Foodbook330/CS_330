@@ -1,3 +1,4 @@
+<!--link CSS and start HTMl file-->
 <html>
 <header>
   <title>Food Storage</title>
@@ -5,6 +6,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lobster|Nanum+Gothic&display=swap" rel="stylesheet">
 </header>
 <body>
+  <!--nav bar-->
   <div class = "nav-bar">
     <div id = "nav-button">
       <a href = "foodbook_home.html">HOME</a>
@@ -12,25 +14,30 @@
     <div id = "nav-button">
       <a href = "my_pantry.html">MY PANTRY</a>
     </div>
+    <div id = "not-a-button">
+      FOOD STORAGE INFO
+    </div>
     <div id = "nav-button">
       <a href = "recipes.html">RECIPES</a>
     </div>
   </div>
+  <!--page title-->
   <div id = "foodbook-header">
-    Food Storage
+    Food Storage Info
   </div>
+  <!--food storage info-->
   <div class = "food-storage-box">
     <div id = "food-storage-section-title">
       Meat
     </div>
     <div id = "foodbook-paragraph">
-      Store raw meat (including poultry and seafood) on the bottom shelf of the refrigerator. This helps ensure that the juices do not drip onto the other foods and contaminate them. Most raw meat can be stored in the refrigerator for 3-5 days. Groud meat, however, should only be kept for 1-2 days. Raw roasts, steaks, and chops can be kept in the freezer for up to a year. Uncooked, frozen ground meat can be kept for 4 months, and frozen cooked meat can be kept for 3 months.
+      Store raw meat (including poultry and seafood) on the bottom shelf of the refridgerator. This helps ensure that the juices do not drip onto the other foods and contaminate them. Most raw meat can be stored in the refrigerator for 3-5 days. Groud meat, however, should only be kept for 1-2 days. Raw roasts, steaks, and chops can be kept in the freezer for up to a year. Uncooked, frozen ground meat can be kept for 4 months, and frozen cooked meat can be kept for 3 months.
     </div>
     <div id = "food-storage-section-title">
       Vegetables
     </div>
     <div id = "foodbook-paragraph">
-      Leafy greens stay fresh the longest when rinsed and stored in a sealed container in the refirgerator. Before placing them in a container, wrap them in paper towel for best results. These vegetables stay good for around 4-6 days. Root vegetables should be stored in a cool, dark, dry spot not in the refrigerator. A good place to store these vegetables and others (such as onions, garlic, potatoes, yams, and pumpkins) would be in your pantry or in a dark cupboard.
+      Leafy greens stay fresh the longest when rinsed and stored in a sealed container in the refridgerator. Before placing them in a container, wrap them in paper towel for best results. These vegetables stay good for around 4-6 days. Root vegetables should be stored in a cool, dark, dry spot not in the refrigerator. A good place to store these vegetables and others (such as onions, garlic, potatoes, yams, and pumpkins) would be in your pantry or in a dark cupboard.
     </div>
     <div id = "food-storage-section-title">
       Fruits
@@ -58,8 +65,9 @@
   </div>
   <div class = "buffer-box">
   </div>
+  <!--comment section-->
   <div id="respond">
-  <h3>Leave a Comment</h3>
+  <div id = "food-storage-section-title">Leave a Comment</div>
   <form action="post_comment.php" method="post" id="commentform">
     <label for="comment_author" class="required">Your name</label>
     <input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
