@@ -1,3 +1,4 @@
+<!--link CSS and start HTML file-->
 <html>
 <header>
   <title>Food Storage</title>
@@ -5,6 +6,7 @@
   <link href="https://fonts.googleapis.com/css?family=Lobster|Nanum+Gothic&display=swap" rel="stylesheet">
 </header>
 <body>
+  <!--navigation bar-->
   <div class = "nav-bar">
     <div id = "nav-button">
       <a href = "foodbook_home.html">HOME</a>
@@ -12,13 +14,18 @@
     <div id = "nav-button">
       <a href = "my_pantry.html">MY PANTRY</a>
     </div>
+    <div id = "not-a-button">
+      FOOD STORAGE INFO
+    </div>
     <div id = "nav-button">
-      COOKING TIPS
+      <a href = "recipes.html">RECIPES</a>
     </div>
   </div>
+  <!--page title-->
   <div id = "foodbook-header">
-    Food Storage
+    Food Storage Info
   </div>
+  <!--food storage info-->
   <div class = "food-storage-box">
     <div id = "food-storage-section-title">
       Meat
@@ -58,8 +65,9 @@
   </div>
   <div class = "buffer-box">
   </div>
+  <!--comment section-->
   <div id="respond">
-  <h3>Leave a Comment</h3>
+  <div class = "food-storage-section-title">Leave a Comment</div>
   <form action="post_comment.php" method="post" id="commentform">
     <label for="comment_author" class="required">Your name</label>
     <input type="text" name="comment_author" id="comment_author" value="" tabindex="1" required="required">
@@ -70,6 +78,7 @@
     <input type="hidden" name="comment_post_ID" value="1" id="comment_post_ID" />
     <input name="submit" type="submit" value="Submit comment" />
   </form>
+  <!--example user comment-->
   <div id = "user-comment">
     <b>ilovefoodstorage</b>
     <p>great tips!</p>

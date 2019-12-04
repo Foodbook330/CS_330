@@ -1,8 +1,10 @@
+/*default format*/
 body {
   font-family: 'Nanum Gothic', sans-serif;
   background-color: #475841;
 }
 
+/*header format*/
 #foodbook-header{
   width: 100%;
   height: 125px;
@@ -13,16 +15,19 @@ body {
   color: white;
   text-shadow: 5px 5px black;
   margin-bottom: 50px;
+  margin-top: 10px;
 }
 
+/*nav bar format*/
 .nav-bar{
   width: 100%;
   height: 60px;
-  font-size: 25px;
+  font-size: 20px;
 }
 
+/*nav button styles*/
 #nav-button{
-  width: 25%;
+  width: 15%;
   float: left;
   margin-top: 10px;
   margin-bottom: 10px;
@@ -30,6 +35,17 @@ body {
   text-align: center;
 }
 
+#not-a-button{
+  width: 15%;
+  float: left;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 8%;
+  text-align: center;
+  color: black;
+}
+
+/*pantry section*/
 #pantry{
   width: 64%;
   height: 100%;
@@ -40,12 +56,14 @@ body {
   margin-right: 0px;
 }
 
+/*heading style*/
 .heading-style{
   text-align: center;
   font-size: 50px;
   margin: 10px;
 }
 
+/*add item section*/
 #add-item{
   width: 31%;
   height: 100%;
@@ -56,6 +74,7 @@ body {
   margin-left: 0px;
 }
 
+/*search bar formating*/
 .search-bar input[type = text]{
   float: left;
   width: 80%;
@@ -66,6 +85,7 @@ body {
   font-size: 25px;
 }
 
+
 .food{
   border-style: solid;
   border-width: thin;
@@ -75,6 +95,7 @@ body {
   margin: 15px;
 }
 
+/*clickable button*/
 .addBtn {
   padding: 10px;
   height: 60px;
@@ -91,6 +112,7 @@ body {
   border-color: black;
 }
 
+/*various button styles*/
 .button-style{
   width: 90%;
   height: 130px;
@@ -135,23 +157,54 @@ body {
   height: 40px;
   margin-left: 5%;
   margin-top: 0px;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
   background-color: #9fb8ad;
   color: black;
   font-size: 21px;
   text-align: center;
 }
 
+.button-style-left{
+  width: 20%;
+  height: 125px;
+  margin:15px;
+  background-color: #9fb8ad;
+  color: black;
+  font-size: 175%;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 125px;
+  float: left;
+  color: white;
+}
+
+.button-style-right{
+  width: 20%;
+  height: 125px;
+  margin:15px;
+  background-color: #9fb8ad;
+  color: black;
+  font-size: 175%;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 125px;
+  float: right;
+  color: white;
+}
+
+/*general format of a*/
 a {
   color: white;
   text-decoration: none;
 }
 
+/*button wrapper for food storage*/
 #button-wrapper{
   margin-bottom: 45px;
   margin-top: 0px;
 }
 
+/*paragraph formatting for food storage*/
 #foodbook-paragraph{
   font-family: 'Nanum Gothic', sans-serif;
   font-size: 25px;
@@ -161,6 +214,7 @@ a {
   margin-bottom: 0px;
 }
 
+/*comment styling*/
 #note{
   font-family: 'Nanum Gothic', sans-serif;
   font-size: 10px;
@@ -170,6 +224,7 @@ a {
   margin-bottom: 0px;
 }
 
+/*section title for food storage page*/
 #food-storage-section-title{
   font-size: 60px;
   text-align: left;
@@ -181,6 +236,7 @@ a {
   margin-top: 50px;
 }
 
+/*section title for pantry page*/
 #pantry-section-title{
   font-size: 60px;
   text-align: center;
@@ -190,6 +246,7 @@ a {
   margin: 10px;
 }
 
+/*subtitle styling*/
 #small-section-title{
   font-size: 45px;
   text-align: center;
@@ -199,10 +256,12 @@ a {
   margin: 10px;
 }
 
+/*boxes and wrappers*/
 .food-storage-box{
   background-color: #9fb8ad;
   margin-left: 15px;
   margin-right: 15px;
+  margin-top: 0px;
 }
 
 .buffer-box{
@@ -222,6 +281,7 @@ a {
   width: 100%;
 }
 
+/*more subtitle formatting*/
 #subtitle{
  text-align: center;
  font-size: 74px;
@@ -229,12 +289,14 @@ a {
  font-family: 'Lobster', cursive;
 }
 
+/*button formatting*/
 #home-button{
   width: 9%;
   float: left;
   height: 125px;
 }
 
+/*input CSS for user comment*/
 #respond {
   margin-top: 40px;
 }
@@ -266,6 +328,7 @@ a {
   border-width: thin;
 }
 
+/*ontainers and items for calendar view on pantry page*/
 .grid-container {
   display: grid;
   grid-template-columns: auto auto auto auto auto auto auto;
@@ -279,7 +342,7 @@ a {
   padding: 20px;
   font-size: 30px;
   text-align: center;
-  margin: 10px;
+  margin: 6px;
   width: 45%;
 }
 
@@ -290,6 +353,16 @@ a {
   font-size: 30px;
   text-align: center;
   margin: 10px;
+  width: 45%;
+}
+
+.grid-item-today {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 4px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+  margin: 6px;
   width: 45%;
 }
 
@@ -318,6 +391,7 @@ a {
 	visibility: visible;
 }
 
+/*video formatting*/
 #video{
   width: 64%;
   height: 100%;
@@ -329,6 +403,7 @@ a {
   background-color: #9fb8ad;
 }
 
+/*search bar 1*/
 form.example input[type=text] {
   padding: 10px;
   font-size: 17px;
@@ -355,6 +430,56 @@ form.example button:hover {
 }
 
 form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*search bar 2*/
+form.example2 input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+  margin-bottom: 40px;
+}
+
+form.example2 button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #9fb8ad;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+
+form.example2 button:hover {
+  background: #31979F;
+}
+
+form.example2::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/*search bar 3*/
+form.example3 input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 98%;
+  background: #f1f1f1;
+  margin: 10px;
+}
+
+form.example3::after {
   content: "";
   clear: both;
   display: table;

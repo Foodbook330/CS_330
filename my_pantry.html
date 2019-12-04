@@ -1,3 +1,4 @@
+<!--link CSS and start HTMl file-->
 <html>
 <header>
   <title>My Pantry</title>
@@ -6,26 +7,33 @@
   <script src="foodbook.js"></script>
 </header>
 <body>
+  <!--nav bar-->
   <div class = "nav-bar">
     <div id = "nav-button">
       <a href = "foodbook_home.html">HOME</a>
     </div>
+    <div id = "not-a-button">
+      MY PANTRY
+    </div>
     <div id = "nav-button">
-      <a href = "food_storage.html">FOOD STORAGE</a>
+      <a href = "food_storage.html">FOOD STORAGE INFO</a>
     </div>
     <div id = "nav-button">
       <a href = "recipes.html">RECIPES</a>
     </div>
   </div>
+  <!--page title-->
   <div id = "foodbook-header">
     My Pantry
   </div>
+  <!--pantry section-->
   <div id = "pantry">
     <div class = "buffer-box2">
-    <div id = "pantry-section-title">
-      November 2019
+      <!--calendar view-->
+      <div id = "pantry-section-title">
+        December 2019
+      </div>
     </div>
-  </div>
     <div class="grid-container">
       <div class="grid-no-item">S</div>
       <div class="grid-no-item">M</div>
@@ -34,15 +42,10 @@
       <div class="grid-no-item">T</div>
       <div class="grid-no-item">F</div>
       <div class="grid-no-item">S</div>
-      <div class="grid-no-item"></div>
-      <div class="grid-no-item"></div>
-      <div class="grid-no-item"></div>
-      <div class="grid-no-item"></div>
-      <div class="grid-no-item"></div>
       <div class="grid-item">1</div>
       <div class="grid-item">2</div>
       <div class="grid-item">3</div>
-      <div class="grid-item">4</div>
+      <div class="grid-item-today">4</div>
       <div class="grid-item">5</div>
       <div class="grid-item">6</div>
       <div class="grid-item">7</div>
@@ -69,27 +72,28 @@
       <div class="grid-item">28</div>
       <div class="grid-item">29</div>
       <div class="grid-item">30</div>
+      <div class="grid-item">31</div>
   </div>
   </div>
+  <!--add item section-->
   <div id = "add-item">
     <div id = "pantry-section-title">
       Add Item
     </div>
-    <div class = "button-style2">
-      <a href = apple.html>APPLE</a>
+    <!--search bar-->
+    <form class="example2" action="/action_page.php">
+      <input type="text" placeholder="Search..." name="search">
+      <button><a>GO</a></button>
+    </form>
+    <!--frequently added items section-->
+    <div id = "small-section-title">
+      Frequently Added Items
     </div>
     <div class = "button-style2">
-      BANANA
+      <a href = intermediate_apple.html>APPLE</a>
     </div>
     <div class = "button-style2">
-      CHEESE
+      <a href = intermediate_banana.html>BANANA</a>
     </div>
-    <div class = "button-style2">
-      BREAD
-    </div>
-    <div class = "button-style2">
-      ASPARAGUS
-    </div>
-  </div>
 </body>
 </html>

@@ -1,3 +1,4 @@
+<!--link CSS and start HTML file-->
 <html>
 <header>
   <title>Recipes</title>
@@ -6,6 +7,7 @@
   <script src="foodbook.js"></script>
 </header>
 <body>
+  <!--nav bar-->
   <div class = "nav-bar">
     <div id = "nav-button">
       <a href = "foodbook_home.html">HOME</a>
@@ -14,25 +16,33 @@
       <a href = "my_pantry.html">MY PANTRY</a>
     </div>
     <div id = "nav-button">
-      <a href = "food_storage.html">FOOD STORAGE</a>
+      <a href = "food_storage.html">FOOD STORAGE INFO</a>
+    </div>
+    <div id = "not-a-button">
+      RECIPES
     </div>
   </div>
+  <!--page title-->
   <div id = "foodbook-header">
     Recipes
   </div>
+  <!--video section-->
   <div id = "video">
     <div id = "pantry-section-title">
       Find Recipe Videos
+      <!--search bar-->
       <form class="example" action="/action_page.php">
         <input type="text" placeholder="Search..." name="search">
         <button><a href = "recipe_video.html">GO</a></button>
       </form>
     </div>
   </div>
+  <!--twitter feed section-->
   <div id = "add-item">
     <div id = "small-section-title">
       Recipe Inspiration
     </div>
+    <!--twitter feed-->
     <a class="twitter-timeline" data-height = "730" href="https://twitter.com/My_Recipes?ref_src=twsrc%5Etfw">Tweets by My_Recipes</a>
     <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   </div>
